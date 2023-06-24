@@ -45,7 +45,7 @@
 * Công thức xác suất đầy đủ
 * Định lý Bayes
 * Luyện tập áp dụng công thức xác suất đầy đủ + định lý Bayes
-* [Mới] Hệ thống nhận diện tên thực thể
+* Hệ thống nhận diện tên thực thể (mới)
 
 7. Thống kê 1
 * Kỳ vọng
