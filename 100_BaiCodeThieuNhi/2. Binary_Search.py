@@ -9,3 +9,16 @@ Output: 4
 Explanation: 9 exists in nums and its index is 4
 
 """
+
+
+print('Please type an arr: ')
+
+arr = [int(a) for a in input().split()]
+target = int(input('type a target number: '))
+
+for i in range(0, len(arr)) :
+    if int(arr[i]) == target :
+        print(i)
+    else :
+        print('Please type another target number next time.')
+        quit()
