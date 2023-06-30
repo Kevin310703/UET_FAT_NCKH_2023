@@ -21,17 +21,25 @@ Example 3:
 
 """
 def solatnguoc(n) :
-    if n>-231 and n<230:
-        lat = 0
-        while n != 0 :
-            lat = lat*10 + n%10
-            n //= 10
-        return lat 
+    if n < 0 :
+        soam = True 
+        n = abs(n)
+    else :
+        soam = False 
+
+
+    lat = 0
+    while n != 0 :
+         lat = lat*10 + n%10
+         n //= 10
     
-    else:
-        print("Nhap 1 so lon hon -231 va be hon 230")
-x = int(input("nhap 1 so: "))
+    if soam : 
+        lat *= -1
+    if soam < -2**31 or soam > (2**31-1) :
+        return 0
+    return lat
 
-result = solatnguoc(x)
-print (result)
 
+
+    
+    
