@@ -20,3 +20,18 @@ Example 3:
     Output: 21
 
 """
+def solatnguoc(n) :
+    if n>-231 and n<230:
+        lat = 0
+        while n != 0 :
+            lat = lat*10 + n%10
+            n //= 10
+        return lat 
+    
+    else:
+        print("Nhap 1 so lon hon -231 va be hon 230")
+x = int(input("nhap 1 so: "))
+
+result = solatnguoc(x)
+print (result)
+
