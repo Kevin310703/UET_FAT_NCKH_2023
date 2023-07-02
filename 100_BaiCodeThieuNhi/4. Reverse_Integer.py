@@ -14,7 +14,7 @@ def reverse(x):
     if is_negative:
         reversed_num *= -1
     
-    if reversed_num < -2**31 or reversed_num > (2**31 - 1):
+    if reversed_num < -231 or reversed_num > (231 - 1):
         return 0
     
     return reversed_num
