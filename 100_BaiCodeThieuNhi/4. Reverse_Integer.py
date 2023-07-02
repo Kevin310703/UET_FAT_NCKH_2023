@@ -11,10 +11,11 @@ def reverse(x):
         reversed_num = (reversed_num * 10) + last_digit
         x = x // 10
     
+    
     if is_negative:
         reversed_num *= -1
     
-    if reversed_num < -231 or reversed_num > (231 - 1):
-        return 0
+   
     
     return reversed_num
+print(reverse(120))
