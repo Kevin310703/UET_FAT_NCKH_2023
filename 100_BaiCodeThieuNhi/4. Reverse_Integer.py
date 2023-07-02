@@ -7,8 +7,8 @@ def reverse(x):
     
     reversed_num = 0
     while x != 0:
-        last_digit = x % 10
-        reversed_num = (reversed_num * 10) + last_digit
+        
+        reversed_num = (reversed_num * 10) + x%10
         x = x // 10
     
     
