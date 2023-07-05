@@ -21,3 +21,11 @@ Example 3:
     Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 """
+def isPalindrome(x):
+    
+    x = str(x)
+    
+    return x == x[::-1]
+
+num = int(input('nhap 1 so:'))
+print(isPalindrome(num))
