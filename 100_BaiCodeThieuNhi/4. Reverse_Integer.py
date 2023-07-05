@@ -9,7 +9,7 @@ def reverse(x):
     while x != 0:
         
         reversed_num = (reversed_num * 10) + x%10
-        x = x // 10
+        x //= 10
     
     
     if is_negative:
@@ -18,4 +18,7 @@ def reverse(x):
    
     
     return reversed_num
-print(reverse(120))
+
+num = int(input("nhap 1 so: "))
+print(reverse(num))
+
