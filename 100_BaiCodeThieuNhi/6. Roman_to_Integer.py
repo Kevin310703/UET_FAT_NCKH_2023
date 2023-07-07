@@ -43,3 +43,32 @@ Example 3:
     Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 """
+
+
+def solama(s):
+
+    quydoi = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+
+    tong = 0
+
+    
+    for i in range(len(s)):
+        
+        if i < len(s) - 1 and quydoi[s[i]] < quydoi[s[i+1]]:
+           
+            tong -= quydoi[s[i]]
+        else:
+            
+            tong += quydoi[s[i]]
+
+    return tong
+num = str(input('nhap so:'))
+print(solama(num))
