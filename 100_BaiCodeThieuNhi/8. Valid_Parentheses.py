@@ -24,3 +24,23 @@ Example 3:
     Output: false
 
 """
+
+
+def isValid(s):
+    stack = []
+
+    for char in s:
+        if char in '({[':
+            stack.append(char)
+        else:
+            if not stack:
+                return False
+            dongNgoac = stack.pop()
+            if (dongNgoac == '(' and char != ')') or \
+                    (dongNgoac == '[' and char != ']') or \
+                    (dongNgoac == '{' and char != '}'):
+                return False
+
+    return len(stack) == 0
+kytu = str(input('Nhap ky tu:'))
+print(isValid(kytu))
