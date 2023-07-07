@@ -42,3 +42,5 @@ def longestCommonPrefix(strs):
 
 a = str(input('Nhap chuoi :'))
 print(longestCommonPrefix(a))
+
+#cíu em em o biết sai ở đâu, mắc kẹt ở đây từ chiều :))))
