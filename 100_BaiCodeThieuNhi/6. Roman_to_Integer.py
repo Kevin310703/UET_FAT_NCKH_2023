@@ -70,5 +70,5 @@ def solama(s):
             tong += quydoi[s[i]]
 
     return tong
-num = str(input('nhap so:'))
+num = str(input('Nhap so la ma:'))
 print(solama(num))
