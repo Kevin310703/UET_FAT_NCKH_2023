@@ -1,0 +1,13 @@
+#: import HomeScreen libs.uix.baseclass.home_screen.HomeScreen
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+
+<Root>
+    transition: FadeTransition(clearcolor=app.theme_cls.bg_dark)
+
+    HomeScreen:
+        name: "home"
+
+
+<CustomLabel@MDLabel>:
+    adaptive_height: True

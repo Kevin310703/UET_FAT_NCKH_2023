@@ -16,3 +16,31 @@ Example 2:
 Explanation: There is no common prefix among the input strings.
 
 """
+
+def longestCommonPrefix(strs):
+    
+    if not strs:
+        return ""
+
+    
+    chuoi_min = min(len(s) for s in strs)
+
+   
+    for i in range(chuoi_min):
+        
+        char = strs[0][i]
+
+        
+        if not all(s[i] == char for s in strs):
+           
+            return strs[0][:i]
+
+    
+    return strs[0][:chuoi_min]
+
+
+
+a = str(input('Nhap chuoi :'))
+print(longestCommonPrefix(a))
+
+#cíu em em o biết sai ở đâu, mắc kẹt ở đây từ chiều :))))
