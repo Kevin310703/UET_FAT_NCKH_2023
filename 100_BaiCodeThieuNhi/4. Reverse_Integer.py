@@ -18,4 +18,5 @@ def reverse(x):
    
     
     return reversed_num
-print(reverse(120))
+num = input("Nhap 1 so: ")
+print(reverse(num))
