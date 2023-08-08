@@ -12,7 +12,7 @@ class Window(QWidget):
         self.setGeometry(1200, 300, 1200, 1200) 
         self.setWindowTitle('Play Video ')   #tiêu đề của cửa sổ
         self.setToolTip(' Play Video')
-        self.setWindowIcon(QIcon('nhun.jpg'))  #biểu tượng của cửa sổ
+        self.setWindowIcon(QIcon('hqh.png'))  #biểu tượng của cửa sổ
 
         p = self.palette()
         p.setColor(QPalette.Window, Qt.gray ) #màu cho cửa sổ
