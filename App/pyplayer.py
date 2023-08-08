@@ -1,5 +1,6 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QStyle, QSlider, QFileDialog
+import os
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QStyle, QSlider, QFileDialog
 from PyQt5.QtGui import QIcon, QPalette
 from PyQt5.QtCore import Qt, QUrl
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
@@ -12,8 +13,9 @@ class Window(QWidget):
         self.setGeometry(1200, 300, 1200, 1200) 
         self.setWindowTitle('Play Video ')   #tiêu đề của cửa sổ
         self.setToolTip(' Play Video')
-        self.setWindowIcon(QIcon('FAT.ico'))  #biểu tượng của cửa sổ
-
+        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'FAT.ico')
+        self.setWindowIcon(QIcon(icon_path))
+        
         p = self.palette()
         p.setColor(QPalette.Window, Qt.gray ) #màu cho cửa sổ
         self.setPalette(p)
@@ -98,6 +100,7 @@ class Window(QWidget):
 def window(): 
     app = QApplication(sys.argv)   
     win = Window()
-    win.show()  
-    sys.exit(app.exec_())  
+    win.show()
+    sys.exit(app.exec_())
+
 window()
